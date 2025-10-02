@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKT 인터넷 모바일 결합할인 계산기</title>
+    <title>SKT 결합 할인 계산기</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -474,7 +474,7 @@
         dom.kakaoShareBtn.onclick = e => { e.preventDefault(); location.href = `kakaolink://send?text=${encodeURIComponent(shareMessage)}`; };
         
         // [수정] sms 링크에 수신자 전화번호 추가
-        const targetPhoneNumber = '01042978846';
+        const targetPhoneNumber = '01098479375';
         dom.smsShareBtn.href = `sms:${targetPhoneNumber}?body=${encodeURIComponent(shareMessage)}`;
         
         dom.resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
