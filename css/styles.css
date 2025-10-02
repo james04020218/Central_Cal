@@ -1,0 +1,368 @@
+/* Common styles for the calculator hub */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.025em;
+}
+
+/* Calculator card hover effects */
+.calculator-card {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.calculator-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Miso logo styling */
+.miso-logo {
+    font-family: 'Nunito', 'Inter', sans-serif !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.01em;
+    color: #2563eb !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 4px;
+}
+
+/* Mobile optimizations for hub */
+@media (max-width: 640px) {
+    .mobile-padding {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    .mobile-text-sm {
+        font-size: 0.875rem !important;
+    }
+    
+    .mobile-compact {
+        padding: 1rem !important;
+    }
+    
+    .mobile-gap {
+        gap: 1rem !important;
+    }
+    
+    .mobile-header-spacing {
+        padding: 2rem 1rem !important;
+    }
+    
+    .mobile-title {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+    }
+    
+    .mobile-subtitle {
+        font-size: 0.875rem !important;
+    }
+}
+
+/* Premium glassmorphism effects */
+.glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Enhanced gradient backgrounds */
+.premium-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.premium-gradient-light {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+}
+
+/* Smooth animations */
+.smooth-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced shadows */
+.premium-shadow {
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.premium-shadow-lg {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Mobile optimized card hover */
+@media (max-width: 768px) {
+    .card:hover {
+        transform: translateY(-4px) scale(1.01);
+        box-shadow: 0 15px 30px -8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Mobile-first responsive design adjustments */
+@media (max-width: 640px) {
+    .calculator-card {
+        margin-bottom: 1rem;
+    }
+    
+    .calculator-card .p-6 {
+        padding: 1.25rem;
+    }
+    
+    .calculator-card h3 {
+        font-size: 1rem;
+    }
+    
+    .calculator-card p {
+        font-size: 0.75rem;
+    }
+    
+    .calculator-card button {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Common form styles for calculators */
+.input-group { 
+    margin-bottom: 1.5rem; 
+}
+
+.input-label { 
+    display: block; 
+    margin-bottom: 0.5rem; 
+    font-weight: 500; 
+    color: #334155; 
+}
+
+.input-field, .select-field { 
+    width: 100%; 
+    padding: 0.75rem; 
+    border: 1px solid #cbd5e1; 
+    border-radius: 0.5rem; 
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+    font-size: 1rem;
+}
+
+.input-field:focus, .select-field:focus { 
+    border-color: #0ea5e9; 
+    outline: none; 
+    box-shadow: 0 0 0 0.2rem rgba(14, 165, 233, 0.25); 
+}
+
+.input-field:disabled, .select-field:disabled { 
+    background-color: #e2e8f0; 
+    cursor: not-allowed; 
+}
+
+.btn-primary { 
+    background-color: #0ea5e9; 
+    color: white; 
+    padding: 0.75rem 1.5rem; 
+    border-radius: 0.5rem; 
+    font-weight: 600; 
+    transition: background-color 0.3s ease; 
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover { 
+    background-color: #0284c7; 
+}
+
+.btn-secondary { 
+    background-color: #64748b; 
+    color: white; 
+    padding: 0.75rem 1.5rem; 
+    border-radius: 0.5rem; 
+    font-weight: 600; 
+    transition: background-color 0.3s ease; 
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary:hover { 
+    background-color: #475569; 
+}
+
+.section-title { 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: #0369a1; 
+    margin-bottom: 1rem; 
+    padding-bottom: 0.5rem; 
+    border-bottom: 2px solid #38bdf8;
+}
+
+.result-card { 
+    background-color: white; 
+    padding: 1.5rem; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); 
+    margin-bottom: 1.5rem; 
+}
+
+.result-label { 
+    color: #475569; 
+}
+
+.result-value { 
+    color: #1e293b; 
+    font-weight: 600;
+}
+
+.total-value { 
+    color: #f59e0b; 
+    font-size: 1.5rem; 
+    font-weight: 700;
+}
+
+.mobile-line-item { 
+    border: 1px solid #e2e8f0; 
+    padding: 1rem; 
+    border-radius: 0.5rem; 
+    margin-bottom: 0.75rem; 
+}
+
+.radio-label { 
+    margin-right: 1rem; 
+    margin-bottom: 0.5rem; 
+    display: inline-flex; 
+    align-items: center; 
+    cursor: pointer;
+}
+
+.radio-input { 
+    margin-right: 0.5rem; 
+    accent-color: #0ea5e9; 
+}
+
+.info-box { 
+    background-color: #eff6ff; 
+    border-left: 4px solid #3b82f6; 
+    padding: 1rem; 
+    margin-top: 0.5rem; 
+    margin-bottom: 1rem; 
+    font-size: 0.875rem; 
+    color: #1e40af;
+}
+
+.info-box ul { 
+    padding-left: 1.25rem; 
+    list-style-type: disc; 
+}
+
+.info-box ul ul { 
+    padding-left: 1rem; 
+    list-style-type: circle;
+}
+
+.toggle-switch { 
+    position: relative; 
+    display: inline-block; 
+    width: 40px; 
+    height: 20px; 
+    margin-left: 10px; 
+    vertical-align: middle;
+}
+
+.toggle-switch input { 
+    opacity: 0; 
+    width: 0; 
+    height: 0; 
+}
+
+.slider { 
+    position: absolute; 
+    cursor: pointer; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: #ccc; 
+    transition: .4s; 
+    border-radius: 20px;
+}
+
+.slider:before { 
+    position: absolute; 
+    content: ""; 
+    height: 16px; 
+    width: 16px; 
+    left: 2px; 
+    bottom: 2px; 
+    background-color: white; 
+    transition: .4s; 
+    border-radius: 50%;
+}
+
+input:checked + .slider { 
+    background-color: #2196F3; 
+}
+
+input:checked + .slider:before { 
+    transform: translateX(20px); 
+}
+
+.discount-details { 
+    background-color: #e0f2fe; 
+    border: 1px solid #7dd3fc; 
+    padding: 0.75rem; 
+    border-radius: 0.5rem; 
+    font-size: 0.875rem; 
+}
+
+.discount-details ul { 
+    padding-left: 1.25rem; 
+}
+
+.discount-details ul ul { 
+    padding-left: 1rem; 
+}
+
+/* Navigation styles */
+.nav-back {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-back:hover {
+    background: #f8fafc;
+    transform: scale(1.1);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .input-field, .select-field {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 1rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.25rem;
+    }
+    
+    .nav-back {
+        top: 0.5rem;
+        left: 0.5rem;
+        width: 40px;
+        height: 40px;
+    }
+}

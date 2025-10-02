@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위성 TV 계산기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="text-slate-800 bg-gradient-to-br from-yellow-50 to-orange-100">
+    <!-- Back to Hub Button -->
+    <button onclick="goBackToHub()" class="nav-back" title="허브로 돌아가기">
+        <i class="fas fa-arrow-left text-gray-600"></i>
+    </button>
+
+    <header class="bg-yellow-600 text-white p-6 shadow-md">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-2xl md:text-3xl font-bold text-center">위성 TV 계산기</h1>
+            <p class="text-center text-yellow-200 mt-1 text-sm md:text-base">위성 방송 서비스 요금을 계산해보세요 (준비중)</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-4xl p-4 sm:p-6 lg:p-8">
+        <div class="text-center py-16">
+            <div class="w-24 h-24 mx-auto mb-6 bg-yellow-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-satellite-dish text-4xl text-yellow-600"></i>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">서비스 준비중입니다</h2>
+            <p class="text-gray-600 mb-8 max-w-md mx-auto">
+                위성 TV 요금 계산기를 준비하고 있습니다. 
+                곧 더 나은 서비스로 찾아뵙겠습니다.
+            </p>
+            
+            <div class="space-y-4">
+                <button onclick="goBackToHub()" class="btn-primary bg-yellow-600 hover:bg-yellow-700">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    허브로 돌아가기
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/common.js"></script>
+</body>
+</html>
